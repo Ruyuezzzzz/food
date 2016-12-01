@@ -1,0 +1,189 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #fdfaf6;
+}
+
+#vis{
+    margin: 0px;
+    padding: 0px;
+    height: 70%;
+    width: 100%;
+}
+
+#title{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 36px;
+}
+
+#subtitle{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.name{
+    font-size: 12px;
+}
+
+.bar_lable, .bar_title{
+    font-size:12px;
+}
+
+.axis{
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    font-size: 10px;
+    opacity: 0.3;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.notes{
+    margin: 1% 5%;
+    padding: 0;
+    height: 28%;
+    width: 90%;
+}
+
+#left_note, #right_note{
+    width: 49%;
+    height: 100%;
+    margin-right: 1%;
+    padding: 0.6% 5%;
+    float: left;
+    border: solid 1px gray;
+    overflow: scroll;
+    vertical-align: middle;
+}
+
+#left_note p, #left_note h3, #right_note p{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.tooltip {
+    position: absolute;
+}
+
+.tooltip p {
+    background-color: white;
+    border: #eee 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+button{
+    color: white;
+    background-color: #8182a7;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#user_generated{
+    width: 80%;
+}
+
+.bar_button{
+    height: 40px;
+    width: 100px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #8182a7; 
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+    #title{
+        font-size: 16px;
+    }
+
+    #subtitle{
+        font-size: 10px;
+    }
+
+    .name{
+        font-size: 10px;
+    }
+
+    .axis{
+        stroke-width: 0.5px;
+    }
+
+    .bar_lable, .bar_title{
+        font-size: 8px;
+    }
+
+    #left_note p, #left_note h3, #right_note p{
+        font-size: 12px;
+    }
+
+    #user_generated{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bar_button{
+        font-size: 8px;
+        width: 70px; 
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    #vis{
+        height: 60%;
+   }
+
+   #title{
+        font-size: 12px;
+    }
+
+    #subtitle{
+        font-size: 8px;
+    }
+
+    .name{
+        font-size: 8px;
+    }
+
+    .notes{
+        height: 38%;
+    }
+
+    #left_note, #right_note{
+        width: 100%;
+        height: 48%;
+        margin: 0;
+        border: solid 1px gray;
+        overflow: scroll;
+    }
+
+    #left_note{
+        margin-bottom: 2%;
+    }
+
+    .bar_button{
+        font-size: 6px;
+        width: 48px;
+        height: 25px; 
+    }
+}
